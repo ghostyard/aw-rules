@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apocalypse World Rules</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.7.1.min.js"
+			  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="topbar">
+        <div class="left">
+            <a href="/"><i data-feather="info"></i> <div>Apocalypse World 2nd Edition</div></a>
+        </div>
+        <div class="right">
+            <a href="#stats">Stats and Moves </a>
+            <a href="#principles">HX</a>
+            <a href="#principles">Master of Ceremonies</a>
+        </div>
+    </div>
+
+<div class="searchbar"><p><input type="text" id="quicksearch" placeholder="Search" /></p></div>
+
+<div id="filters" class="button-group">
+  <button class="button is-checked" data-filter="*">Show All</button>
+  <button class="button" data-filter=".cool">Cool</button>
+  <button class="button" data-filter=".hard">Hard</button>
+  <button class="button" data-filter=".hot">Hot</button>
+  <button class="button" data-filter=".sharp">Sharp</button>
+  <button class="button" data-filter=".weird">Weird</button>
+  <button class="button" data-filter=".hx">Hx</button>
+  <button class="button" data-filter=".battle">Combat-Specific</button>
+</div>
+
+<div class="grid">
+  <div class="element-item cool">
+    <h1>Do Something Under Fire</h1>
+    <div class="tags"><div class="tag cool"><span></span> Cool</div></div>
+    <p>When you <b>do something under fire</b>, or <b>dig in to endure fire</b>, roll+cool.</p>
+    <ul>
+        <li>On a 10+, you do it. </li>
+        <li>On a 7–9, you flinch, hesitate, or stall: the MC can offer you a worse
+            outcome, a hard bargain, or an ugly choice. </li>
+        <li>On a miss, be prepared for the worst.</li>
+    </ul>
+  </div>
+
+  <div class="element-item hard">
+    <h1>Attack Someone</h1>
+    <div class="tags"><div class="tag hard"><span></span> Hard</div></div>
+    <p>When you <b>attack someone unprepared, unsuspecting, or helpless</b>, roll+hard.
+        </p>
+    <ul>
+        <li>On a 10+, inflict full harm as established. </li>
+        <li>On a 7–9, they’re able somehow to
+            dodge, block, or duck, or else you just don’t quite strike home; in�ict little harm.</li>
+        <li>In either case, if they can and do choose to fight back, now you’re doing battle
+            with them. On a miss, be prepared for the worst.</li>
+    </ul>
+  </div>
+
+  <div class="element-item battle">
+    <h1>Do Battle</h1>
+    <div class="tags"><div class="tag"><span></span> Battle</div></div>
+    <p>When you <b>do battle with someone</b>, choose the appropriate extended battle
+        moves with the MC, and see them through.
+    </p>
+  </div>
+
+  <div class="element-item hard">
+    <h1>Go Aggro</h1>
+    <div class="tags"><div class="tag"><span></span> Hard</div></div>
+    <p>When you go aggro on someone, say what you want them to do, and say what
+        you’ll do if they don’t. Roll+hard. 
+    </p>
+    <ul>
+        <li>On a 10+, they have to choose: force your
+            hand, or cave and do what you want. If they force your hand, you can do what
+            you threatened, including inflicting harm as established.</li>
+        <li>On a 7–9, they can
+            choose to force your hand or to cave, but they can also choose instead to fight
+            back or make a break for it, and now you’re doing battle with them. In either case, if they can and do choose to fight back, now you’re doing battle
+            with them. </li>
+        <li>On a miss, be prepared for the worst.</li>
+    </ul>
+  </div>
+
+  <div class="element-item hot">
+    <h1>Seduce or Manipulate</h1>
+    <div class="tags"><div class="tag"><span></span> Hot</div></div>
+    <p>When you try to seduce or manipulate someone, tell them what you want and
+        roll+hot. For NPCs: on a hit, they ask you to promise something first, and do it if
+        you promise. 
+        On a miss, for either NPCs or PCs, be prepared for the wors
+    </p>
+    <ul>
+        <li>On a 10+, both.
+            <ul>
+                <li>if they do it, they mark experience</li>
+                <li>if they refuse, erase one of their stat highlights for the remainder of the session</li>
+            </ul>
+        </li>
+        <li>On a
+            7–9, choose 1. What they do then is up to them.
+        </li>
+        <li>On a miss, be prepared for the worst.</li>
+    </ul>
+  </div>
+
+  <div class="element-item hx">
+    <h1>Help or Interfere</h1>
+    <div class="tags"><div class="tag hx"><span></span> Hx</div></div>
+    <p>When you help or interfere with someone who’s making a roll, roll+Hx.
+    </p>
+    <ul>
+        <li>On a 10+, they take +2 (help) or -2 (interfere) to their roll. </li>
+        <li>On a 7–9, they take +1 (help) or -1 (interfere) to their roll. </li>
+        <li>On a miss, be prepared for the worst.</li>
+    </ul>
+  </div>
+
+  <div class="element-item sharp">
+    <h1>Read a Sitch</h1>
+    <div class="tags"><div class="tag sharp"><span></span> Sharp</div></div>
+    <p>When you read a charged situation, roll+sharp. On a hit, you can ask the MC
+        questions. Whenever you act on one of the MC’s answers, take +1. 
+        
+    </p>
+    <ul>
+        <li>On a 10+, ask 3. 
+            <ul>
+                <li>where’s my best escape route / way in / way past?</li>
+                <li>which enemy is most vulnerable to me?</li>
+                <li>which enemy is the biggest threat?</li>
+                <li>what should I be on the lookout for?</li>
+                <li>what’s my enemy’s true position?</li>
+                <li>who’s in control here?</li>
+            </ul>
+        </li>
+        <li>On a 7–9, ask 1 from the above list.</li>
+        <li>On a miss, ask 1 anyway, but be prepared for the worst.</li>
+    </ul>
+  </div>
+
+  <div class="element-item sharp">
+    <h1>Read a Person</h1>
+    <div class="tags"><div class="tag sharp"><span></span> Sharp</div></div>
+    <p>When you read a person in a charged interaction, roll+sharp. On a hit, the MC will tell you something new and
+        interesting about the current situation, and might ask you a question or
+        two; answer them. 
+        
+    </p>
+    <ul>
+        <li>On a 10+, the MC will give you good detail.</li>
+        <li>On a 7–9, hold 1 of the above list. While you're interacting with them,
+            spend your hold to ask their player questions, 1-for-1:</li>
+        <li>On a miss, ask 1 anyway, but be prepared for the worst.</li>
+    </ul>
+  </div>
+
+  <div class="element-item weird">
+    <h1>Open Your Brain</h1>
+    <div class="tags"><div class="tag weird"><span></span> Weird</div></div>
+    <p>When you open your brain to the world's psychic maelstrom,
+        roll+weird. On a hit, the MC will tell you something new and
+        interesting about the current situation, and might ask you a question or
+        two; answer them. 
+        
+    </p>
+    <ul>
+        <li>On a 10+, the MC will give you good detail. 
+        </li>
+        <li>On a 7–
+            9, the MC will give you an impression.</li>
+        <li>If you already know all there is
+            to know, the MC will tell you that.</li>
+    </ul>
+  </div>
+
+</div>
+
+    <script>
+        feather.replace();
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="scripts.js"></script>
+</body>
+</html>
