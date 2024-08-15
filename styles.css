@@ -81,6 +81,7 @@ body {
     text-transform:uppercase;
     border-radius:8px;
 }
+
 #container {
   width:80vw;
   margin:100px auto;
@@ -232,7 +233,7 @@ input[type="text"] {
     padding-left:1em;
   }
   
-  .element-item:hover {
+  .element-item:hover, .right a:hover {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     transition:0.3s all ease-in;
   }
