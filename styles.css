@@ -182,7 +182,7 @@ input[type="text"] {
   .element-item {
     position: relative;
     float: left;
-    width: calc(100% - 50px);
+    width: calc(100% - 64px);
     margin: 24px 4px;
     padding: 32px;
     color: #262524;
