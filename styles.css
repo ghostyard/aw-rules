@@ -13,7 +13,7 @@
     --grey-900: #F5F5F5; 
     --grey-950: #FAFAFA;
     --tag-cool: #264653;
-    --tag-cool-op: rgba(38, 70, 83, 0.4);
+    --tag-cool-op: rgba(38, 70, 83, 0.3);
     --tag-hx: #2A9D8F;
     --tag-hx-op: rgba(42, 157, 143, 0.3);
     --tag-hard: #E76F51;
@@ -34,6 +34,15 @@ body {
     padding:0;
     color:var(--grey-100);
     line-height:160%;
+}
+
+#container h1 {
+  font-family:'crimson text';
+}
+
+#container h2 {
+  font-family:'crimson text';
+  color:var(--grey-200);
 }
 
 #topbar {
@@ -80,10 +89,13 @@ body {
 
 
 input[type="text"] {
-    font-size: 20px;
+    font-size: 16px;
     margin:auto;
-    width:100%;
+    width:calc(100% - 40px);
     display:block;
+    border:none;
+    border-radius:24px;
+    padding:8px 16px;
   }
   
   /* ---- button ---- */
@@ -92,26 +104,24 @@ input[type="text"] {
     display: inline-block;
     padding: 0.5em 1.0em;
     margin-bottom: 10px;
-    background: #EEE;
+    background: var(--grey-900);
     border: none;
-    border-radius: 7px;
-    background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
-    color: #222;
-    font-family: sans-serif;
+    border-radius: 16px;
+    font-family: 'crimson text';
     font-size: 16px;
-    text-shadow: 0 1px white;
     cursor: pointer;
+    transition:0.2s all ease-in;
   }
   
   .button:hover {
-    background-color: #8CF;
-    text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+    background-color: var(--grey-700);
+    transition:0.2s all ease-in;
     color: #222;
   }
   
   .button:active,
   .button.is-checked {
-    background-color: #28F;
+    background-color: var(--grey-100);
   }
   
   .button.is-checked {
