@@ -12,9 +12,18 @@
     --grey-800: #E5E5E5;
     --grey-900: #F5F5F5; 
     --grey-950: #FAFAFA;
-    --accent-main: #C75146;
-    --accent-sub: #0FA3B1;
-    --accent-tertiary: #033F63;
+    --tag-cool: #264653;
+    --tag-cool-op: rgba(38, 70, 83, 0.4);
+    --tag-hx: #2A9D8F;
+    --tag-hx-op: rgba(42, 157, 143, 0.3);
+    --tag-hard: #E76F51;
+    --tag-hard-op: rgba(231, 111, 81, 0.3);
+    --tag-hot: #8AB17D;
+    --tag-hot-op: rgba(138, 177, 125, 0.3);
+    --tag-weird: #E9C46A;
+    --tag-weird-op: rgba(233, 196, 106, 0.3);
+    --tag-sharp: #F4A261;
+    --tag-sharp-op: rgba(244, 162, 97, 0.3);
 }
 
 body {
@@ -63,17 +72,18 @@ body {
     text-transform:uppercase;
     border-radius:8px;
 }
-
+#container {
+  width:80vw;
+  margin:100px auto;
+}
 /* ---- input ---- */
 
-.searchbar {
-  margin:96px auto auto 48px;
-}
 
 input[type="text"] {
     font-size: 20px;
-    width:80vw;
     margin:auto;
+    width:100%;
+    display:block;
   }
   
   /* ---- button ---- */
@@ -139,7 +149,7 @@ input[type="text"] {
   /* ---- grid ---- */
   
   .grid {
-    width:80vw;
+    width:100%;
     margin:auto;
   }
   
@@ -155,10 +165,13 @@ input[type="text"] {
   .element-item {
     position: relative;
     float: left;
-    width: 100%;
-    margin: 5px;
-    padding: 25px 10px;
+    width: calc(100% - 50px);
+    margin: 24px 4px;
+    padding: 25px;
     color: #262524;
+    background-color:var(--grey-900);
+    border-radius:16px;
+    transition:0.3s all ease-in;
   }
   
   .element-item > * {
@@ -203,4 +216,86 @@ input[type="text"] {
     top: 76px;
     font-size: 12px;
   }
+
+  .element-item li {
+    list-style-position:inside;
+    padding-left:1em;
+  }
   
+  .element-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    transition:0.3s all ease-in;
+  }
+
+  .tags {
+    display:inline-block;
+    padding:10px 0;
+  }
+
+  .element-item .tag {
+    display:flex;
+    align-items:center;
+    padding-left:16px;
+    padding-right:16px;
+    gap:8px;
+    margin-right:16px;
+    border-radius:16px;
+    background-color:var(--grey-800);
+    font-family:'crimson text';
+    font-weight:bold;
+  }
+
+  .element-item span {
+    width:8px;
+    height:8px;
+    background-color:var(--grey-400);
+    border-radius:100%;
+  }
+
+  .tag.cool {
+    background-color: var(--tag-cool-op)
+  }
+
+  .cool span {
+    background-color:var(--tag-cool);
+  }
+
+  .tag.hx {
+    background-color: var(--tag-hx-op)
+  }
+
+  .hx span {
+    background-color:var(--tag-hx);
+  }
+
+  .tag.hard {
+    background-color: var(--tag-hard-op)
+  }
+
+  .hard span {
+    background-color:var(--tag-hard);
+  }
+
+  .tag.hot {
+    background-color: var(--tag-hot-op)
+  }
+
+  .hot span {
+    background-color:var(--tag-hot);
+  }
+
+  .tag.weird {
+    background-color: var(--tag-weird-op)
+  }
+
+  .weird span {
+    background-color:var(--tag-weird);
+  }
+
+  .tag.sharp {
+    background-color: var(--tag-sharp-op)
+  }
+
+  .sharp span {
+    background-color:var(--tag-sharp);
+  }
