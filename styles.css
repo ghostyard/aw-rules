@@ -419,6 +419,9 @@ input[type="text"] {
 /**mobile adjustments**/
 
 @media (max-width: 700px) {
+  .button {
+    font-size:12px;
+  }
   body {
       font-size:1rem;
   }
@@ -435,6 +438,10 @@ input[type="text"] {
       padding: 10px 16px;
       width:calc(100vw - 32px);
       justify-content:center;
+  }
+
+  .element-item {
+    margin-bottom:48px;
   }
 
   .left {
