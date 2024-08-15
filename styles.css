@@ -420,7 +420,7 @@ input[type="text"] {
 
 @media (max-width: 700px) {
   .button {
-    font-size:12px;
+    font-size:14px;
   }
   body {
       font-size:1rem;
