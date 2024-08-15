@@ -67,6 +67,7 @@ body {
 
 #container h1 {
   font-family:'crimson text';
+  line-height:130%;
 }
 
 #container h2 {
@@ -182,6 +183,14 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.sm-text {
+  display:none;
+}
+
+.big-text {
+  display:block;
 }
 
 /* ---- input ---- */
@@ -406,3 +415,37 @@ input[type="text"] {
   .sharp span {
     background-color:var(--tag-sharp);
   }
+
+/**mobile adjustments**/
+
+@media (max-width: 700px) {
+  body {
+      font-size:1rem;
+  }
+
+  .sm-text {
+    display:block;
+  }
+
+  .big-text {
+    display:none;
+  }
+
+  #topbar {
+      padding: 10px 16px;
+      width:calc(100vw - 32px);
+      justify-content:center;
+  }
+
+  .left {
+      display:none;
+  }
+
+  .right {
+      gap:8px;
+  }
+
+  #container {
+    width:90vw;
+  }
+}
