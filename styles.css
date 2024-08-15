@@ -80,6 +80,7 @@ body {
     font-weight:bold;
     text-transform:uppercase;
     border-radius:8px;
+    transition:0.2s all ease-in;
 }
 
 #container {
@@ -178,7 +179,7 @@ input[type="text"] {
     float: left;
     width: calc(100% - 50px);
     margin: 24px 4px;
-    padding: 25px;
+    padding: 32px;
     color: #262524;
     background-color:var(--grey-900);
     border-radius:16px;
