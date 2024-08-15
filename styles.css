@@ -83,6 +83,11 @@ body {
     transition:0.2s all ease-in;
 }
 
+.right a:hover {
+  background-color:var(--grey-300);
+  transition:0.2s all ease-in;
+}
+
 #container {
   width:80vw;
   margin:100px auto;
