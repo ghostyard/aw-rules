@@ -26,6 +26,8 @@
     --tag-sharp-op: rgba(244, 162, 97, 0.3);
     --tag-road: #b06ae6;
     --tag-road-op: rgba(176, 106, 230, 0.3);
+    --tag-battle: #d12a2a;
+    --tag-battle-op: rgba(209, 42, 42, 0.3);
 }
 
 [data-theme="dark"] {
@@ -56,6 +58,8 @@
     --tag-sharp-op: rgba(244, 162, 97, 0.3);
     --tag-road: #b06ae6;
     --tag-road-op: rgba(176, 106, 230, 0.3);
+    --tag-battle: #d12a2a;
+    --tag-battle-op: rgba(209, 42, 42, 0.3);
 }
 
 
@@ -348,7 +352,9 @@ input[type="text"] {
   }
 
   .tags {
-    display:inline-block;
+    display:flex;
+    flex-direction:row;
+    gap:8px;
     padding:10px 0;
   }
 
@@ -418,6 +424,14 @@ input[type="text"] {
 
   .sharp span {
     background-color:var(--tag-sharp);
+  }
+
+  .tag.battle {
+    background-color: var(--tag-battle-op)
+  }
+
+  .battle span {
+    background-color:var(--tag-battle);
   }
 
   .tag.road {
