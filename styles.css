@@ -24,6 +24,8 @@
     --tag-weird-op: rgba(233, 196, 106, 0.3);
     --tag-sharp: #F4A261;
     --tag-sharp-op: rgba(244, 162, 97, 0.3);
+    --tag-road: #b06ae6;
+    --tag-road-op: rgba(176, 106, 230, 0.3);
 }
 
 [data-theme="dark"] {
@@ -52,6 +54,8 @@
     --tag-weird-op: rgba(233, 196, 106, 0.3);
     --tag-sharp: #F4A261;
     --tag-sharp-op: rgba(244, 162, 97, 0.3);
+    --tag-road: #b06ae6;
+    --tag-road-op: rgba(176, 106, 230, 0.3);
 }
 
 
@@ -414,6 +418,14 @@ input[type="text"] {
 
   .sharp span {
     background-color:var(--tag-sharp);
+  }
+
+  .tag.road {
+    background-color: var(--tag-road-op)
+  }
+
+  .road span {
+    background-color:var(--tag-road);
   }
 
 /**mobile adjustments**/
