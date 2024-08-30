@@ -354,7 +354,6 @@ input[type="text"] {
   .tags {
     display:flex;
     flex-direction:row;
-    gap:8px;
     padding:10px 0;
   }
 
